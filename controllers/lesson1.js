@@ -1,5 +1,6 @@
  //This file is where logic takes place
- 
+const mongodb = require('../db/connect');
+
 const johnRoute = (req, res) => {
   res.send("John Muller");
 };
