@@ -20,11 +20,11 @@ mongodb.initDb((err, mongodb) => {
         console.log(err);
     } else {
         app.listen(port);
-        console.log('Connected to database and listening on ${port}');
+        console.log(`Connected to database and listening on ${port}`);
     }
 });
  
-app.listen(process.env.port || port);
-console.log('Web Server is listening at port ' + (process.env.port || port));
+//app.listen(process.env.port || port);
+//console.log('Web Server is listening at port ' + (process.env.port || port));
 
 
