@@ -1,5 +1,5 @@
 //This file is where logic takes place
-const mongodb = require('./db/connect');
+const mongodb = require('../db/connect');
 const objectID = require('mongodb').objectId;
 
 const getAll = async (req, res, next) => {
