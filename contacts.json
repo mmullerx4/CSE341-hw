@@ -1,0 +1,37 @@
+{
+    "contact": {
+        "firstname": "Melinda",
+        "lastname": "Muller",
+        "email": "test1@mail.com",
+        "favoriteColor": "blue",
+        "birthday": "04/04/1963"
+    },
+    "contact2": {
+        "firstname": "John",
+        "lastname": "Muller",
+        "email": "test2@mail.com",
+        "favoriteColor": "green",
+        "birthday": "05/27/1993"
+    },
+    "contact3": {
+        "firstname": "Jacob",
+        "lastname": "Muller",
+        "email": "test3@mail.com",
+        "favoriteColor": "blue",
+        "birthday": "05/27/1993"
+    },
+    "contact4": {
+        "firstname": "Nathan",
+        "lastname": "Muller",
+        "email": "test4@mail.com",
+        "favoriteColor": "blue",
+        "birthday": "10/15/1997"
+    },
+    "contact5": {
+        "firstname": "Skylar",
+        "lastname": "Muller",
+        "email": "test5@mail.com",
+        "favoriteColor": "pink",
+        "birthday": "11/11/1999"
+    }
+}
