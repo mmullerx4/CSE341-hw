@@ -22,6 +22,8 @@ const getSingle = async (req, res, next) => {
     res.status(200).json(lists[0]);
   });
 };
+
+
   
   
     module.exports = { getAll, getSingle
