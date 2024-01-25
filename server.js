@@ -18,15 +18,15 @@ app.use((req, res, next) => {
 app.use('/', require('./routes'));
 
 
-app.post('/contact', (req, res) => {
-    const contact req.body;
+//app.post('/contact', (req, res) => {
+    //const contact req.body;
 
-    console.log(contact);
-    contacts.push(contact);
+    //console.log(contact);
+    //contacts.push(contact);
 
-    res.send('contact is added to the database');
+    //res.send('contact is added to the database');
 
-});
+//});
 
 
 mongodb.initDb((err, mongodb) => {
