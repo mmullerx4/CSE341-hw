@@ -22,15 +22,15 @@ POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Isabel",
+     "firstName":"Catherine",
     "lastName":"Muller",
-    "email":"iMuller@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"11/19/1998"
+    "email":"cmuller@mail.com",
+    "favoriteColor":"red",
+    "birthday":"01/18/1936"
 }
 
 ### PUT (update) contact (works)
-PUT http://localhost:8080/contacts/65aaaef90ff1a59c000cfe64 HTTP/1.1
+PUT http://localhost:8080/contacts/65b5c36bc842fca4f72c9f29 HTTP/1.1
 content-type: application/json
 
 {
@@ -40,19 +40,19 @@ content-type: application/json
     "favoriteColor":"blue",
     "birthday":"05/27/93"
 }
-### DELETE contact delete Melinda
-DELETE http://localhost:8080/contacts/65aaae4b0ff1a59c000cfe63 HTTP/1.1 
+### DELETE contact delete Jeremiah
+DELETE http://localhost:8080/contacts/65b5c5b8c842fca4f72c9f2b HTTP/1.1 
 
 ### Create contact (works) add Josiah
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Josiah",
+    "firstName":"Winter",
     "lastName":"Muller",
-    "email":"jMuller@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"06/30/1927"
+    "email":"wmuller@mail.com",
+    "favoriteColor":"black",
+    "birthday":"09/04/2014"
 }
 
 ### PUT contact (works)
@@ -69,17 +69,6 @@ content-type: application/json
 
 
 ### DELETE contact (Josiah)
-DELETE http://localhost:8080/contacts/65aab0110ff1a59c000cfe64 HTTP/1.1
+DELETE http://localhost:8080/contacts/65b5c6f2c842fca4f72c9f2c HTTP/1.1
 
-### Create contact
-POST http://localhost:8080/contacts HTTP/1.1
-content-type: application/json
-
-{
-    "firstName":"John",
-    "lastName":"Muller",
-    "email":"muller02@test.com",
-    "favoriteColor":"green",
-    "birthday":"11/11/1963"
-}
 
