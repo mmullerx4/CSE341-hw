@@ -37,13 +37,13 @@ content-type: application/json
     "firstName":"Jacob",
     "lastName":"Muller",
     "email":"test3@mail.com",
-    "favoriteColor":"blue",
+    "favoriteColor":"orange",
     "birthday":"05/27/93"
 }
 ### DELETE contact delete Jeremiah
 DELETE http://localhost:8080/contacts/65b5c5b8c842fca4f72c9f2b HTTP/1.1 
 
-### Create contact (works) add Josiah
+### Create contact (works) 
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
@@ -68,7 +68,7 @@ content-type: application/json
 }
 
 
-### DELETE contact (Josiah)
-DELETE http://localhost:8080/contacts/65b5c6f2c842fca4f72c9f2c HTTP/1.1
+### DELETE contact
+DELETE http://localhost:8080/contacts/65b5d323c842fca4f72c9f32 HTTP/1.1
 
 
