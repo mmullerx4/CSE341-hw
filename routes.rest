@@ -56,19 +56,19 @@ content-type: application/json
 }
 
 ### PUT contact (works)
-PUT http://localhost:8080/contacts/65aab0110ff1a59c000cfe65 HTTP/1.1
+PUT http://localhost:8080/contacts/65b5c443c842fca4f72c9f2a HTTP/1.1
 content-type: application/json
 
 {
     "firstName":"Nathan",
     "lastName":"Muller",
     "email":"test4@mail.com",
-    "favoriteColor":"teal",
+    "favoriteColor":"chocolate",
     "birthday":"10/15/97"
 }
 
 
 ### DELETE contact
-DELETE http://localhost:8080/contacts/65b5d323c842fca4f72c9f32 HTTP/1.1
+DELETE http://localhost:8080/contacts/65b5d8af9b3f581f8499e701 HTTP/1.1
 
 
