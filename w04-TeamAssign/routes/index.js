@@ -8,7 +8,7 @@ express.use(
   '/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://github.com/sterlingt22/temple-api.git',
+      documentationURL: 'https://github.com/mmullerx4/CSE341-hw/tree/main/w04-TeamAssign',
     };
     res.send(docData);
   })
