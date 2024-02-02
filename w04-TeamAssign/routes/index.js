@@ -1,17 +1,17 @@
-const express = require('express').Router();
-const templeRoutes = require('./temple');
-const swaggerRoutes = require('./swagger');
- 
-express.use('/temples', templeRoutes);
-express.use('/swagger', swaggerRoutes);
-express.use(
+const routes = require('express').Router();
+const temple = require('./temple');
+
+routes.use('/', require('./swagger'));
+routes.use('/temples', temple);
+routes.use(
   '/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://github.com/mmullerx4/CSE341-hw/tree/main/w04-TeamAssign',
+      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
     };
     res.send(docData);
   })
 );
- 
-module.exports = express;
+
+module.exports = routes;
+
