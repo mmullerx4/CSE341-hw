@@ -3,22 +3,22 @@
 
 //LocalHost
 ### Get all contacts
-GET http://localhost:8080/contacts
+GET http://localhost:8080/characters
 
 ### Get contact by ID
-GET http://localhost:8080/contacts/65aaae4b0ff1a59c000cfe63
+GET http://localhost:8080/characters/65aaae4b0ff1a59c000cfe63
 
 ### Get contact by ID
-GET http://localhost:8080/contacts/65aaaef90ff1a59c000cfe64
+GET http://localhost:8080/characters/65aaaef90ff1a59c000cfe64
 
 ### Get contact by ID
-GET http://localhost:8080/contacts/65aab0110ff1a59c000cfe65
+GET http://localhost:8080/characters/65aab0110ff1a59c000cfe65
 
 ### Get contact by ID
-GET http://localhost:8080/contacts/65ab15dcc1f33a000b6d1d2a
+GET http://localhost:8080/characters/65ab15dcc1f33a000b6d1d2a
 
 ### Create contact
-POST http://localhost:8080/contacts HTTP/1.1
+POST http://localhost:8080/characters HTTP/1.1
 content-type: application/json
 
 {
@@ -30,7 +30,7 @@ content-type: application/json
 }
 
 ### PUT (update) contact (works)
-PUT http://localhost:8080/contacts/65b5c36bc842fca4f72c9f29 HTTP/1.1
+PUT http://localhost:8080/characters/65b5c36bc842fca4f72c9f29 HTTP/1.1
 content-type: application/json
 
 {
@@ -41,10 +41,10 @@ content-type: application/json
     "birthday":"05/27/93"
 }
 ### DELETE contact delete Jeremiah
-DELETE http://localhost:8080/contacts/65b5c5b8c842fca4f72c9f2b HTTP/1.1 
+DELETE http://localhost:8080/characters/65b5c5b8c842fca4f72c9f2b HTTP/1.1 
 
 ### Create contact (works) 
-POST http://localhost:8080/contacts HTTP/1.1
+POST http://localhost:8080/characters HTTP/1.1
 content-type: application/json
 
 {
@@ -56,7 +56,7 @@ content-type: application/json
 }
 
 ### PUT contact (works)
-PUT http://localhost:8080/contacts/65b5c443c842fca4f72c9f2a HTTP/1.1
+PUT http://localhost:8080/characters/65b5c443c842fca4f72c9f2a HTTP/1.1
 content-type: application/json
 
 {
@@ -69,6 +69,6 @@ content-type: application/json
 
 
 ### DELETE contact
-DELETE http://localhost:8080/contacts/65b5d8af9b3f581f8499e701 HTTP/1.1
+DELETE http://localhost:8080/characters/65b5d8af9b3f581f8499e701 HTTP/1.1
 
 

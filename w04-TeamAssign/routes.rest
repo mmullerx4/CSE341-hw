@@ -1,0 +1,74 @@
+//This is for running the REST Client for testing purposes
+//just click on the Send Request below
+
+//LocalHost
+### Get all temples
+GET http://localhost:8080/temples
+
+### Get temples by ID
+GET http://localhost:8080/temples/1
+
+### Get temples by ID
+GET http://localhost:8080/temples/2
+
+### Get temples by ID
+GET http://localhost:8080/temples/3
+
+### Get temples by ID
+GET http://localhost:8080/temples/4
+
+### Create temples
+POST http://localhost:8080/temples HTTP/1.1
+content-type: application/json
+
+{
+  "temple_id": 300,
+  "additionalInfo": false,
+  "name": "Africa Temple",
+  "location": "Abidjan, Ivory Coast",
+  "dedicated": "Construction"
+}
+
+### PUT (update) contact (works)
+PUT http://localhost:8080/temples/300 HTTP/1.1
+content-type: application/json
+
+{
+  "temple_id": 300,
+  "additionalInfo": false,
+  "name": "Abidjan Ivory Coast Temple",
+  "location": "Abidjan, Ivory Coast",
+  "dedicated": "Test"
+}
+### DELETE contact delete Jeremiah
+DELETE http://localhost:8080/temples/300 HTTP/1.1 
+
+### Create contact (works) 
+POST http://localhost:8080/temples HTTP/1.1
+content-type: application/json
+
+{
+  "temple_id": 301,
+  "additionalInfo": false,
+  "name": "Abidjan Ivory Coast Temple",
+  "location": "Abidjan, Ivory Coast",
+  "dedicated": "Construction"
+}
+
+### PUT contact (works)
+PUT http://localhost:8080/temples/301 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Nathan",
+    "lastName":"Muller",
+    "email":"test4@mail.com",
+    "favoriteColor":"chocolate",
+    "birthday":"10/15/97"
+}
+
+
+### DELETE contact
+DELETE http://localhost:8080/temples/301 HTTP/1.1
+
+
